@@ -121,3 +121,15 @@ export function PASSWORD_LOST(body) {
     },
   };
 }
+
+export function STATS_GET(body) {
+  return {
+    url: API_URL + `/api/stats`,
+    options: {
+      method: "GET",
+      headers: {
+        Authorization: "Bearer" + localStorage.getItem("token"),
+      },
+    },
+  };
+}
