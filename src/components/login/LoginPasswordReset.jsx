@@ -4,7 +4,7 @@ import Button from "../forms/Buttons";
 
 const LoginPasswordReset = () => {
   return (
-    <section>
+    <section className="animeLeft">
       <h1 className="title">Resete a senha</h1>
       <Input label="Nova senha" />
       <Button>Enviar email</Button>
